@@ -1,0 +1,183 @@
+body {
+  background: #e0dfd6;
+  font-family: "Raleway", sans-serif;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  height: 100vh;
+}
+
+header {
+  color: #5e5252;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  cursor: pointer;
+}
+
+.name:hover {
+  font-style: italic;
+}
+
+.links:link {
+  text-decoration: none;
+}
+
+.links {
+  bottom: 2rem;
+  color: #871c25;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.oracle {
+  font-size: 18px;
+  color: #871c25;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.oracle:hover {
+  font-style: italic;
+}
+
+.logo {
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+section {
+  color: #000000;
+  font-size: 20px;
+  margin-top: 10rem;
+}
+
+.about {
+  color: #871c25;
+  overflow: hidden;
+  height: 0;
+}
+.contact {
+  color: #871c25;
+  overflow: hidden;
+  height: 0;
+}
+.work {
+  color: #871c25;
+  overflow: hidden;
+  height: 0;
+}
+
+article {
+  font-size: 16px;
+}
+
+.line {
+  height: 1px;
+  background: #000000;
+}
+
+.mail {
+  color: #871c25;
+}
+
+.mail:link {
+  text-decoration: none;
+}
+
+.clickableTitle {
+  cursor: pointer;
+}
+
+.clickableTitle:hover {
+  font-style: italic;
+}
+
+.accordion {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .accordion {
+    flex-direction: column;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .clickableTitle {
+    margin-left: 0;
+  }
+  img {
+    margin-left: 0;
+  }
+}
+
+h2 {
+  font-size: 18px;
+  margin-left: 7rem;
+  font-weight: normal;
+}
+
+.content {
+  min-width: 30ch;
+  text-align: left;
+  margin-right: 2rem;
+}
+
+img {
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  padding: 2rem;
+  position: absolute;
+  border: 5rem;
+}
+
+/* chatGPT Define a keyframe animation named 'shake' */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0); /* Initial and final position: no translation */
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(
+      -4px
+    ); /* Move left by 5 pixels at specified keyframes */
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(
+      4px
+    ); /* Move right by 5 pixels at specified keyframes */
+  }
+}
+
+/* Apply the 'shake' animation to the logo when it's being hovered or touched */
+.logo:hover,
+.logo:active {
+  animation: shake 0.8s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* doesn't work */
+.accordion {
+  transition: height 0.9s ease-in-out;
+  overflow: hidden;
+}
