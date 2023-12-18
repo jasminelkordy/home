@@ -35,10 +35,8 @@ header {
 .oracle {
   font-size: 18px;
   color: #871c25;
-}
-
-.oracle:hover {
   font-style: italic;
+  text-decoration: none;
 }
 
 .logo {
